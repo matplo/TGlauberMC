@@ -98,7 +98,7 @@
 #ifdef HAVE_MATHMORE
  #include <Math/SpecFuncMathMore.h>
 #endif
-using namespace std;
+#include <iostream>
 #endif
 
 #ifndef _runglauber_
@@ -386,7 +386,7 @@ class TGlauberMC : public TNamed
     void                SetShiftMax(Double_t s)      {fANucleus.SetShiftMax(s); fBNucleus.SetShiftMax(s);}
     void                SetSmearing(Double_t s)      {fANucleus.SetSmearing(s); fBNucleus.SetSmearing(s);}
     const char         *Str()                  const {return Form("gmc-%s%s-snn%.1f-md%.1f-nd%.1f-rc%d-smax%.1f",fANucleus.GetName(),fBNucleus.GetName(),fXSect,fBNucleus.GetMinDist(),fBNucleus.GetNodeDist(),fBNucleus.GetRecenter(),fBNucleus.GetShiftMax());}
-    static void         PrintVersion()               {cout << "TGlauberMC " << Version() << endl;}
+    static void         PrintVersion()               {std::cout << "TGlauberMC " << Version() << std::endl;}
     static const char  *Version()                    {return "v3.2";}
 
     ClassDef(TGlauberMC,6) // TGlauberMC class

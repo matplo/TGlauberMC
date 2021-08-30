@@ -1,6 +1,8 @@
 // tglaubermc_fs.cxx
 #include "tglaubermc_f.hh"
 
+using namespace std;
+
 namespace TGlauberMC_f
 {
 //---------------------------------------------------------------------------------

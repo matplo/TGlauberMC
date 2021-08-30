@@ -1,5 +1,8 @@
 #include "tglaubermc.hh"
 
+using namespace std;
+
+
 ClassImp(TGlauNucleon)
   //---------------------------------------------------------------------------------
 void TGlauNucleon::RotateXYZ(Double_t phi, Double_t theta)
